@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.card-wrapper {
+  margin: 0 auto;
+  width: 90vw;
+
+  align-items: center;
+  margin: 3rem;
+}
+.img-display {
+  overflow: hidden;
+}
+.img-showcase {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  transition: all 0.5s ease;
+}
+.img-showcase img {
+  min-width: 100%;
+}
+
+.img-select {
+  display: flex;
+}
+.img-item {
+  margin: 0.3rem;
+}
+.img-item:hover {
+  opacity: 0.7;
+}
+
+.hotel-content {
+  padding: 3rem 1rem;
+}
+.hotel-title {
+  position: relative;
+}
+.hotel-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 80px;
+  background-color: black;
+}
+
+.hotel-ratings {
+  color: yellow;
+  margin-top: 1rem;
+}
+.hotel-ratings span {
+  color: #000;
+  font-weight: 800;
+}
+
+.hotel-price {
+  font-weight: 800;
+  font-size: 1rem;
+}
+.last-price span {
+  color: red;
+  text-decoration: line-through;
+}
+.new-price span {
+  color: blue;
+}
+
+ul li {
+  list-style: none;
+}
+.hotel-detail .fas {
+  color: rgb(247, 94, 6);
+  padding-right: 0.5rem;
+}
+.book {
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.social-links {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+.social-links p {
+  padding-right: 2rem;
+}
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
